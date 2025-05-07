@@ -1,0 +1,297 @@
+/* Reset di base e stili globali */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Un bianco leggermente più caldo */
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #2c3e50; /* Blu scuro elegante */
+    color: #ecf0f1; /* Bianco sporco */
+    padding: 1rem 0;
+    border-bottom: 3px solid #e7af61; /* Oro/Ambra */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #e7af61; /* Oro/Ambra */
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header nav li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #e7af61; /* Oro/Ambra */
+    font-weight: bold;
+}
+
+/* Hero Section (Home) */
+#hero {
+    background: url('https://via.placeholder.com/1500x700?text=Elegante+Sfondo+Gioielli') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 70vh; /* Altezza relativa alla viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+#hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #e7af61;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e7af61; /* Oro/Ambra */
+    color: #2c3e50; /* Blu scuro per contrasto */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #d39e50; /* Oro più scuro */
+    transform: translateY(-2px);
+}
+
+/* Sezioni Generali */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    color: #2c3e50;
+}
+
+/* Prodotti in evidenza (Home) e Griglia Prodotti */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-item-home, .product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item-home:hover, .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.product-item-home img, .product-item img {
+    max-width: 100%;
+    height: 200px; /* Altezza fissa per uniformità */
+    object-fit: cover; /* Mantiene le proporzioni e riempie */
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.product-item-home h3, .product-item h3 {
+    font-size: 1.4em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.product-item-home p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.product-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e7af61; /* Oro/Ambra */
+    margin: 10px 0;
+}
+
+.btn-add-cart {
+    background: #3498db; /* Blu più chiaro per i pulsanti di azione */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    background: #2980b9; /* Blu più scuro */
+}
+
+
+/* Pagina Contatti */
+#contact-form-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#contact-form-section input[type="text"],
+#contact-form-section input[type="email"],
+#contact-form-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding e border nel width/height */
+}
+
+#contact-form-section textarea {
+    resize: vertical;
+}
+
+#contact-form-section button.btn { /* Specifica per il bottone del form */
+    background: #2c3e50;
+    color: #e7af61;
+    border: 2px solid #e7af61;
+}
+#contact-form-section button.btn:hover {
+    background: #e7af61;
+    color: #2c3e50;
+}
+
+
+#contact-info {
+    text-align: center;
+}
+#contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+#contact-info a {
+    color: #e7af61;
+    text-decoration: none;
+}
+#contact-info a:hover {
+    text-decoration: underline;
+}
+.map-placeholder {
+    margin-top: 20px;
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer {
+    background: #2c3e50; /* Blu scuro */
+    color: #ecf0f1; /* Bianco sporco */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    header .logo {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 8px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Una colonna su schermi piccoli */
+    }
+}
+/* Stili per l'animazione allo scroll delle sezioni (opzionale) */
+section { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out; 
+}
+section.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+/* La prima sezione (#hero) e l'header non dovrebbero avere questa animazione iniziale */
+#hero, header + section /* la prima section dopo l'header */ {
+    opacity: 1;
+    transform: translateY(0);
+}

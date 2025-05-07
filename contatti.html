@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gioielleria Splendore - Contatti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Gioielleria Splendore</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prodotti.html">Prodotti</a></li>
+                    <li><a href="contatti.html" class="active">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-form-section">
+            <div class="container">
+                <h2>Contattaci</h2>
+                <p>Hai domande o desideri un gioiello personalizzato? Compila il modulo sottostante.</p>
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="subject">Oggetto:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div>
+                        <label for="message">Messaggio:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Invia Messaggio</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact-info">
+            <div class="container">
+                <h2>Dove Trovarci</h2>
+                <p><strong>Indirizzo:</strong> Via dei Gioielli, 123 - 00100 Città Preziosa (CP)</p>
+                <p><strong>Telefono:</strong> <a href="tel:+390123456789">+39 012 345 6789</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@gioielleriasplendore.it">info@gioielleriasplendore.it</a></p>
+                <!-- Potresti inserire una mappa Google Maps qui -->
+                <div class="map-placeholder">
+                    <p>(Spazio per la mappa)</p>
+                    <img src="https://via.placeholder.com/800x300?text=Mappa+Negozio" alt="Mappa negozio" style="max-width:100%; height:auto;">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Gioielleria Splendore. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
